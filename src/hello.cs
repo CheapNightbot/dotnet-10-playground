@@ -38,3 +38,10 @@ while (age < maxAge)
         age += 2;
     }
 }
+
+void Greet(string name, int age)
+{
+    System.Console.WriteLine("Hello " + name + "! You are " + age + " years old.");
+}
+
+Greet(name, age);
