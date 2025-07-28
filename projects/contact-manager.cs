@@ -56,11 +56,11 @@ while (running)
         case "3":
             System.Console.WriteLine("Please fill out following details!");
             System.Console.Write("Name: ");
-            var newName = Console.ReadLine();
+            var newName = Console.ReadLine() ?? "";
             System.Console.Write("Number: ");
-            var newNum = Console.ReadLine();
+            var newNum = Console.ReadLine() ?? "";
             System.Console.Write("Email (optional): ");
-            var newEmail = Console.ReadLine();
+            var newEmail = Console.ReadLine() ?? "";
 
             var newContact = new Person(newName, newNum, newEmail);
             contacts.Add(newContact);
@@ -98,12 +98,12 @@ class Person
     public string Number
     {
         get { return number; }
-        set { if (number.Length == 10) { number = value; } else { number = "No number added!"; } }
+        set { if (value.Length == 10) { number = value; } else { number = "No number added!"; } }
     }
     public string Email
     {
         get { return email; }
-        set { if (email.Contains('@')) { email = value; } else { email = "No email added!"; } }
+        set { if (value.Contains('@')) { email = value; } else { email = "No email added!"; } }
     }
 
     public Person(string name, string number, string email)
