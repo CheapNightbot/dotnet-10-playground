@@ -81,7 +81,7 @@ while (running)
             }
             for (int i = 0; i < contacts.Count; i++)
             {
-                System.Console.WriteLine($"{i}. {contacts[i].Name} ({contacts[i].Number})");
+                System.Console.WriteLine($"{i + 1}. {contacts[i].Name} ({contacts[i].Number})");
             }
             System.Console.Write("Contact name to delete: ");
             var delContact = Console.ReadLine();
