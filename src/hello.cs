@@ -46,3 +46,7 @@ void Greet(string name, int age)
 }
 
 Greet(name, age);
+System.Console.WriteLine(nameof(Greet));
+
+int Square(int x) => x * x;
+System.Console.WriteLine(Square(69));
