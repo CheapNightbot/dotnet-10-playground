@@ -6,7 +6,8 @@ Console.WriteLine("Hello, World! Me " + name + " ~");
 Console.WriteLine("Age: " + age);
 Console.WriteLine("Is boiled? " + isBoiled);
 
-while (true)
+int maxAge = 13;
+while (age < maxAge)
 {
 
     if (isBoiled)
