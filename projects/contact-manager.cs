@@ -89,8 +89,12 @@ while (running)
             if (contactFound != null)
             {
                 contacts.Remove(contactFound);
+                System.Console.WriteLine("Contact deleted!");
             }
-            System.Console.WriteLine("Contact deleted!");
+            else
+            {
+                System.Console.WriteLine("Conact not found!");
+            }
             Console.ReadLine();
             break;
         default:
@@ -109,7 +113,7 @@ class Person
     public string Number
     {
         get { return number; }
-        set { if (value.Length == 10) { number = value; } else { number = "No number added!"; } }
+        set { number = value; }
     }
     public string Email
     {
