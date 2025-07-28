@@ -73,6 +73,12 @@ while (running)
             Console.ReadLine();
             break;
         case "4":
+            if (contacts.Count <= 0)
+            {
+                System.Console.WriteLine("No contacts found, try adding one!");
+                Console.ReadLine();
+                break;
+            }
             for (int i = 0; i < contacts.Count; i++)
             {
                 System.Console.WriteLine($"{i}. {contacts[i].Name} ({contacts[i].Number})");
