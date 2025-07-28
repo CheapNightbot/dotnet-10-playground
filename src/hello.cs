@@ -50,3 +50,12 @@ System.Console.WriteLine(nameof(Greet));
 
 int Square(int x) => x * x;
 System.Console.WriteLine(Square(69));
+
+
+(string name, int age) GetInfo()
+{
+    return ("Potato", 12);
+}
+
+var info = GetInfo();
+System.Console.WriteLine($"Once Again: {info.name} // {info.age}");
