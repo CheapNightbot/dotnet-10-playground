@@ -45,7 +45,12 @@ while (running)
             var found = contacts.FirstOrDefault(x => x.Name == nameToSearch);
             if (found != null)
             {
-                System.Console.WriteLine(found);
+                System.Console.WriteLine("Contact found with that name:");
+                System.Console.WriteLine("**********************");
+                System.Console.WriteLine($"Name: {found.Name}");
+                System.Console.WriteLine($"Number: {found.Number}");
+                System.Console.WriteLine($"Email: {found.Email}");
+                System.Console.WriteLine("**********************");
             }
             else
             {
