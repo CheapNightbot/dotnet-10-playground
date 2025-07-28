@@ -41,7 +41,8 @@ while (age < maxAge)
 
 void Greet(string name, int age)
 {
-    System.Console.WriteLine("Hello " + name + "! You are " + age + " years old.");
+    string status = age < 18 ? "a cool kid" : "an awesome adult";
+    System.Console.WriteLine("Hello " + name + "! You are " + age + " years old and " + status + ".");
 }
 
 Greet(name, age);
