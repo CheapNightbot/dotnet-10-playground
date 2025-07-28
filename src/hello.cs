@@ -7,6 +7,7 @@ Console.WriteLine("Age: " + age);
 Console.WriteLine("Is boiled? " + isBoiled);
 
 int maxAge = 13;
+double temperature = 34.6; // in degree celsius
 while (age < maxAge)
 {
 
@@ -27,5 +28,13 @@ while (age < maxAge)
     {
         Console.WriteLine(name + " is not ready ~ 😣");
     }
-    age++;
+
+    if ((temperature % age) < 1)
+    {
+        age += 1;
+    }
+    else
+    {
+        age += 2;
+    }
 }
