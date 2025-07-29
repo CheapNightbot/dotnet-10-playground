@@ -2,7 +2,7 @@ Stack<string> pancakes = new Stack<string>();
 int pancakesCount = 2;
 Console.WriteLine("# Using Stack for Pancakes #");
 Console.WriteLine("++++++++++++++++++++++++++++");
-Console.WriteLine($"How many pancakes do you want? (defualt to {pancakesCount}) ");
+Console.WriteLine("How many pancakes do you want? ");
 Console.Write(">>> ");
 pancakesCount = int.Parse(Console.ReadLine() ?? "2");
 
