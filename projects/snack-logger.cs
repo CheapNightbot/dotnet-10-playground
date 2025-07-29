@@ -1,10 +1,14 @@
-Console.WriteLine("Enter snack name or 'clear' to clear the snack log!");
+Console.WriteLine("Enter snack name or 'clear' to clear the snack log and 'exit' to exit out of Snack Logger!");
 Console.Write(">>> ");
 var snack = Console.ReadLine();
 
 if (snack == "clear")
 {
     File.WriteAllText("snacks.txt", "");
+}
+else if (snack == "exit")
+{
+    Environment.Exit(0);
 }
 else
 {
