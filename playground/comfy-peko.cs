@@ -1,7 +1,7 @@
 Stack<string> pancakes = new Stack<string>();
 int pancakesCount = 2;
-Console.WriteLine("# Using Stack for Pancakes! #");
-Console.WriteLine("+++++++++++++++++++++++++++++");
+Console.WriteLine("# Using Stack for Pancakes #");
+Console.WriteLine("++++++++++++++++++++++++++++");
 Console.WriteLine($"How many pancakes do you want? (defualt to {pancakesCount}) ");
 Console.Write(">>> ");
 pancakesCount = int.Parse(Console.ReadLine() ?? "2");
@@ -18,3 +18,5 @@ while (pancakes.Count > 0)
     Console.WriteLine($"You just ate {pancakes.Pop()}");
     Console.WriteLine($"Pancakes left: {pancakes.Count()}");
 }
+
+Console.WriteLine("You ate all the pancakes! 🤤");
