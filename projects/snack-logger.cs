@@ -12,7 +12,8 @@ else if (snack == "exit")
 }
 else
 {
-    File.AppendAllText("snacks.txt", snack + Environment.NewLine);
+    string timestamp = DateTime.Now.ToString("yyyy, MMM dd hh:mm tt");
+    File.AppendAllText("snacks.txt", $"{timestamp} - {snack}{Environment.NewLine}");
 }
 
 string snackLog = File.ReadAllText("snacks.txt");
